@@ -168,8 +168,6 @@ namespace funkcje_klasy
             Console.WriteLine("Write your name");
             name = Console.ReadLine();
 
-            
-            
             do
             {
                 level1 = StartIPoziom(level, level);
@@ -183,24 +181,24 @@ namespace funkcje_klasy
                 stopwatch.Start();
 
                 tab = UzupełnienieTablicy(tab, random, random2, level1);
-                ZapisaniePrzeszkód(tab,tabOfobstacles);
-                
+                ZapisaniePrzeszkód(tab, tabOfobstacles);
+
                 do
                 {
                     Console.WriteLine("Move the 'O' whit use 'W,A,S,D' = ' ^,<,v,>'");
-                    
+
                     char[,] tab1 = (char[,])tab.Clone();
                     tab1[19, 19] = 'X';
                     tab1[position1, position2] = 'O';
 
-                    Wypisanie(tab1); 
+                    Wypisanie(tab1);
                     Sing(ref position1, ref position2);
-                    
+
                     Console.Clear();
-                    
-                    for (int i = 0; i <20; i++)
-                    {                        
-                        if (tabOfobstacles[position1,position2] == 1)
+
+                    for (int i = 0; i < 20; i++)
+                    {
+                        if (tabOfobstacles[position1, position2] == 1)
                         {
                             Console.WriteLine(name + ", YOU HIT THE MINE, YOU LOST\n");
                             game = false;
@@ -220,14 +218,10 @@ namespace funkcje_klasy
                         break;
                     }
                 } while (game == true);
-                
+
                 game = Zakończenie(game);
 
             } while (game == true);
-
-
-
-
 
             static int StartIPoziom(int level, int level1)
             {
@@ -269,10 +263,10 @@ namespace funkcje_klasy
                 }
                 Console.Clear();
                 return level1;
-                
+
             }
 
-            static char[,] UzupełnienieTablicy(char[,] tab, Random random, Random random2,int level1)
+            static char[,] UzupełnienieTablicy(char[,] tab, Random random, Random random2, int level1)
             {
                 for (int i = 0; i < 20; i++)
                 {
@@ -289,7 +283,7 @@ namespace funkcje_klasy
             }
             static void ZapisaniePrzeszkód(char[,] tab, int[,] tabOfobstacles)
             {
-                for(int i = 0; i < 20; i ++)
+                for (int i = 0; i < 20; i++)
                 {
                     for (int j = 0; j < 20; j++)
                     {
@@ -316,8 +310,8 @@ namespace funkcje_klasy
 
             static void Sing(ref int position1, ref int position2)
             {
-                var odp = Console.ReadLine();
-                char sign = odp[0];
+                var odp = Console.ReadKey().KeyChar;
+                char sign = odp;
                 if (sign != 'a' && sign != 's' && sign != 'd' && sign != 'w')
                 {
                     Console.Clear();
@@ -359,17 +353,17 @@ namespace funkcje_klasy
             {
                 Console.WriteLine("If you want to play again - press 'y'");
                 Console.WriteLine("If you don't want to play again - press 'n'");
-                string s = Console.ReadLine();
-                if (s == "y") { game = true; }
+                char s = Console.ReadKey().KeyChar;
+                if (s == 'y') { game = true; }
                 else { game = false; }
                 Console.Clear();
                 return game;
             }
-            static void AddHighScore(string name, string date, string Time, string level1)
+            static void AddHighScore(string name, string date, string Time, string level)
             {
                 using (StreamWriter streamWriter = File.AppendText("high_scores.txt"))
                 {
-                    streamWriter.WriteLine(name + " | " + date + " | " + Time + " | " + level1);
+                    streamWriter.WriteLine(name + " | " + date + " | " + Time + " | " + level);
                 }
             }
         }
@@ -379,6 +373,18 @@ namespace funkcje_klasy
             throw new NotImplementedException();
         }
     }
+
+    //class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Czlowiek czlowiek = new Czlowiek();
+    //        czlowiek.name = "Adrian";
+    //        czlowiek.Przedstaw_sie();
+    //    }
+    //}
+
+
 }
 
 

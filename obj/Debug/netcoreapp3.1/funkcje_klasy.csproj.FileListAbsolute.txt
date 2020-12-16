@@ -11,3 +11,16 @@ C:\Users\Admin\source\repos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\
 C:\Users\Admin\source\repos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.dll
 C:\Users\Admin\source\repos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.pdb
 C:\Users\Admin\source\repos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.genruntimeconfig.cache
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\bin\Debug\netcoreapp3.1\funkcje_klasy.exe
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\bin\Debug\netcoreapp3.1\funkcje_klasy.deps.json
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\bin\Debug\netcoreapp3.1\funkcje_klasy.runtimeconfig.json
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\bin\Debug\netcoreapp3.1\funkcje_klasy.runtimeconfig.dev.json
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\bin\Debug\netcoreapp3.1\funkcje_klasy.dll
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\bin\Debug\netcoreapp3.1\funkcje_klasy.pdb
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.csprojAssemblyReference.cache
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.AssemblyInfoInputs.cache
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.AssemblyInfo.cs
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.csproj.CoreCompileInputs.cache
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.dll
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.pdb
+C:\Gitrepos\funkcje_klasy\funkcje_klasy\obj\Debug\netcoreapp3.1\funkcje_klasy.genruntimeconfig.cache
